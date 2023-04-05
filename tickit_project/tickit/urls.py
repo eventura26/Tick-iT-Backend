@@ -1,6 +1,7 @@
 from django.urls import path
 from . import views
 from rest_framework.routers import DefaultRouter
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
     path('venues/', views.VenueList.as_view(), name='venue_list'),
@@ -14,7 +15,7 @@ urlpatterns = [
 
 ]
 
-
+urlpatterns += staticfiles_urlpatterns()
 
 
 

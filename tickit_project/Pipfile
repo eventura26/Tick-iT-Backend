@@ -7,9 +7,9 @@ name = "pypi"
 django = "*"
 psycopg2-binary = "*"
 djangorestframework = "*"
+dj-database-url = "*"
 
 [dev-packages]
-
 
 [requires]
 python_version = "3.11"
